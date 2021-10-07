@@ -3,7 +3,7 @@ import React from 'react';
 export default function SecondScreen() {
   return (
     <>
-      <div className="col-12 col-lg-8 col-md-8 p-3">
+      <div className="col-12 col-lg-4 col-md-4 p-3">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
