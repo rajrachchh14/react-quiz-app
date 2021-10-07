@@ -3,18 +3,18 @@ import React from 'react';
 export default function SecondScreen() {
   return (
     <>
-      <div className="col-12 col-lg-4 col-md-4 p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            {/* <a href="#" class="btn btn-primary">
-              Go somewhere
-            </a> */}
-          </div>
+      <div className="col-4 col-lg-4 col-md-4 ">
+        <div className="fixed-right">
+          <div class="alert alert-light border border-primary">$ 100</div>
+          <div class="alert alert-light border border-primary">$ 200</div>
+          <div class="alert alert-light border border-primary">$ 300</div>
+          <div class="alert alert-light border border-primary">$ 400</div>
+          <div class="alert alert-light border border-primary">$ 500</div>
+          <div class="alert alert-light border border-primary">$ 600</div>
+          <div class="alert alert-light border border-primary">$ 700</div>
+          <div class="alert alert-light border border-primary">$ 800</div>
+          <div class="alert alert-light border border-primary">$ 900</div>
+          <div class="alert alert-light border border-primary">$ 1000</div>
         </div>
       </div>
     </>
