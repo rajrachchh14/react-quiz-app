@@ -1,6 +1,8 @@
 import React from 'react';
 
-export default function FirstScreen() {
+export default function FirstScreen(props) {
+  let { data } = props;
+
   return (
     <>
       <div className="col-8 col-lg-8 col-md-8 ">
