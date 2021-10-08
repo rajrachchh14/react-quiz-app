@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function FirstScreen(props) {
-  let { data, questionNo, selectAns } = props;
+  let { data, questionNo, selectAns, answerClassName } = props;
+
+  useEffect(() => {
+    console.log('me');
+  }, []);
 
   return (
     <>

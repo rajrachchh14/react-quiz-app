@@ -4,6 +4,7 @@ import SecondScreen from './SecondScreen';
 export default function App() {
   const [questionNo, setQuestionNo] = useState(null);
   const [selectAns, setSelectAns] = useState(null);
+  const [answerClassName, setAnswerClassName] = useState(false);
   const [stop, setStop] = useState(false);
 
   const data = [
@@ -61,6 +62,7 @@ export default function App() {
             data={data}
             questionNo={questionNo}
             selectAns={selectAns}
+            answerClassName={answerClassName}
           />
           <SecondScreen questionNo={questionNo} />
         </div>
