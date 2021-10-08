@@ -5,8 +5,8 @@ export default function FirstScreen() {
     <>
       <div className="col-8 col-lg-8 col-md-8 ">
         <div className="fixed-bottom p-5">
-          <div class="card border border-primary" style={{ width: '56rem' }}>
-            <div class="card-body">
+          <div class="card border border-primary " style={{ width: '56rem' }}>
+            <div class="card-body ">
               <h5 class="card-title">
                 <div class="alert alert-light border border-primary">
                   1 : What is the virtual DOM? How does react use the virtual

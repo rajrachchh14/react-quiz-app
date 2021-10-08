@@ -1,15 +1,17 @@
 body {
   padding: 1%;
+  background-color: rgb(143, 233, 135);
 }
 
 .alert {
   cursor: pointer;
   font-size: 17px;
   font-weight: bold;
+
+  color: black;
 }
 
 .MoneyList {
-  cursor: none;
   font-size: 17px;
   font-weight: bold;
 }
