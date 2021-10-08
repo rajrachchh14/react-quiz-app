@@ -12,7 +12,7 @@ export default function SecondScreen() {
     { id: 8, amount: 800 },
     { id: 9, amount: 900 },
     { id: 10, amount: 1000 },
-  ];
+  ].reverse();
 
   return (
     <>
