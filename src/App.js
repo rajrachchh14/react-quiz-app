@@ -1,11 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FirstScreen from './FirstScreen';
 import SecondScreen from './SecondScreen';
 export default function App() {
-
-
-  
-
+  const [questionNo, setQuestionNo] = useState(1);
 
   return (
     <>

@@ -20,7 +20,7 @@ export default function SecondScreen() {
         <div className="fixed-right">
           {MoneyPeramid.map((item, i) => (
             <div
-              class="alert alert-light border border-primary"
+              class="alert alert-light border border-primary MoneyList"
               style={{ padding: '14px' }}
             >
               {item.id} . ${item.amount}

@@ -4,4 +4,15 @@ body {
 
 .alert {
   cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
 }
+
+.MoneyList {
+  cursor: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+/*
+  background-color: rgb(94, 182, 241);
+*/
