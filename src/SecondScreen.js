@@ -24,6 +24,7 @@ export default function SecondScreen({ questionNoHook }) {
             <div
               className="alert alert-light border border-primary MoneyList"
               style={{ padding: '14px' }}
+              key={i}
             >
               {item.id} . ${item.amount}
             </div>
