@@ -1,6 +1,8 @@
 import React from 'react';
 
-export default function SecondScreen() {
+export default function SecondScreen({ questionNoHook }) {
+  console.log(questionNoHook);
+
   const MoneyPeramid = [
     { id: 1, amount: 100 },
     { id: 2, amount: 200 },
