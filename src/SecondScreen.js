@@ -24,7 +24,7 @@ function SecondScreen(props) {
           {MoneyPeramid.map((item, i) => (
             <div
               className={`alert alert-light border border-primary MoneyList ${
-                item.id === questionNo ? 'active' : ''
+                item.id == questionNo ? 'active' : ''
               }`}
               style={{ padding: '14px' }}
               key={i}
