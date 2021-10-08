@@ -4,7 +4,7 @@ import SecondScreen from './SecondScreen';
 export default function App() {
   const [questionNo, setQuestionNo] = useState(null);
   const [selectAns, setSelectAns] = useState(null);
-  const [answerClassName, setAnswerClassName] = useState(false);
+  const [answerClassName, setAnswerClassName] = useState('');
   const [stop, setStop] = useState(false);
 
   const data = [
@@ -54,6 +54,27 @@ export default function App() {
     },
   ];
 
+  /*
+  const ChangeEvent = (InputEventHook) => (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      [InputEventHook]: e.target.value,
+    }));
+  };
+*/
+  const ClickEvent = (answerClassNameHook) => (e) => {
+    console.log('hook');
+    answerClassName = 'background-color: rgb(245, 242, 60) !important';
+    setAnswerClassName(answerClassName);
+  };
+
+  /*
+  const answerClassNameHook = () => {
+
+
+  
+  };
+*/
   return (
     <>
       <div className="container ">
@@ -62,7 +83,7 @@ export default function App() {
             data={data}
             questionNo={questionNo}
             selectAns={selectAns}
-            answerClassName={answerClassName}
+            answerClassNameHook={{ ClickEvent }}
           />
           <SecondScreen questionNo={questionNo} />
         </div>

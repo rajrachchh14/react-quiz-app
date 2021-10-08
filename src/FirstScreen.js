@@ -7,6 +7,13 @@ export default function FirstScreen(props) {
     console.log('me');
   }, []);
 
+  const handel = () => {
+    console.log('click');
+
+    answerClassName = 'background-color: rgb(245, 242, 60) !important';
+    setAnswerClassName(answerClassName);
+  };
+
   return (
     <>
       <div className="col-8 col-lg-8 col-md-8 ">
@@ -17,14 +24,17 @@ export default function FirstScreen(props) {
           >
             <div className="card-body ">
               <h5 className="card-title">
-                <div className="blink alert alert-light border border-primary">
+                <div className="alert alert-light border border-primary">
                   1 : What is the virtual DOM? How does react use the virtual
                   DOM to render the UI?
                 </div>
               </h5>
               <div className="row">
                 <div className="col-6 col-lg-6 col-md-6">
-                  <div className="alert alert-light border border-primary">
+                  <div
+                    className="alert alert-light border border-primary"
+                    onClick={handel}
+                  >
                     A . Xyz
                   </div>
                 </div>
