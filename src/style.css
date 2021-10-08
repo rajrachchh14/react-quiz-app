@@ -1,6 +1,6 @@
 body {
   padding: 1%;
-  background-color: rgb(143, 233, 135);
+  background-color: rgb(143, 233, 135) !important;
 }
 
 .alert {
@@ -17,5 +17,18 @@ body {
 }
 
 .active {
-  background-color: rgb(94, 182, 241);
+  background-color: rgb(94, 182, 241) !important;
 }
+
+.blink {
+  background-color: rgb(245, 242, 60) !important;
+  animation: blinker 1s linear 3;
+}
+
+/*
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+*/

@@ -11,7 +11,7 @@ export default function FirstScreen() {
           >
             <div className="card-body ">
               <h5 className="card-title">
-                <div className="alert alert-light border border-primary">
+                <div className="blink alert alert-light border border-primary">
                   1 : What is the virtual DOM? How does react use the virtual
                   DOM to render the UI?
                 </div>
