@@ -1,17 +1,33 @@
 import React, { useEffect } from 'react';
 
-export default function FirstScreen(props) {
-  let { data, questionNo, selectAns, answerClassName } = props;
+// export default function FirstScreen({
+//   data,
+//   questionNo,
+//   selectAns,
+//   answerClassNameHook,
+// })
+
+export default function FirstScreen({
+  data,
+  questionNo,
+  selectAns,
+  answerClassNameHook,
+}) {
+  // let {  } = props;
+
+  // console.log(answerClassNameHook);
 
   useEffect(() => {
-    console.log('me');
+    {
+      // console.log('me');
+    }
   }, []);
 
-  const handel = () => {
-    console.log('click');
+  // const handel = () => {};
 
-    answerClassName = 'background-color: rgb(245, 242, 60) !important';
-    setAnswerClassName(answerClassName);
+  const handel = () => {
+    console.log('handel');
+    answerClassNameHook();
   };
 
   return (
@@ -33,7 +49,7 @@ export default function FirstScreen(props) {
                 <div className="col-6 col-lg-6 col-md-6">
                   <div
                     className="alert alert-light border border-primary"
-                    onClick={handel}
+                    onClick={() => handel()}
                   >
                     A . Xyz
                   </div>

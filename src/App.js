@@ -62,19 +62,12 @@ export default function App() {
     }));
   };
 */
-  const ClickEvent = (answerClassNameHook) => (e) => {
+  const ClickEvent = () => {
     console.log('hook');
-    answerClassName = 'background-color: rgb(245, 242, 60) !important';
-    setAnswerClassName(answerClassName);
+
+    setAnswerClassName('background-color: rgb(245, 242, 60) !important');
   };
 
-  /*
-  const answerClassNameHook = () => {
-
-
-  
-  };
-*/
   return (
     <>
       <div className="container ">
@@ -83,7 +76,7 @@ export default function App() {
             data={data}
             questionNo={questionNo}
             selectAns={selectAns}
-            answerClassNameHook={{ ClickEvent }}
+            answerClassNameHook={ClickEvent}
           />
           <SecondScreen questionNo={questionNo} />
         </div>
