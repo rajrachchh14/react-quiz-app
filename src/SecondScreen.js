@@ -1,8 +1,9 @@
 import React from 'react';
 
 function SecondScreen(props) {
-  console.log(props.questionNo);
+  // console.log(props.questionNo);
 
+  const { questionNo } = props;
   const MoneyPeramid = [
     { id: 1, amount: 100 },
     { id: 2, amount: 200 },
@@ -22,7 +23,9 @@ function SecondScreen(props) {
         <div className="fixed-right">
           {MoneyPeramid.map((item, i) => (
             <div
-              className="alert alert-light border border-primary MoneyList"
+              className={`alert alert-light border border-primary MoneyList ${
+                item.id === questionNo ? 'active' : ''
+              }`}
               style={{ padding: '14px' }}
               key={i}
             >
