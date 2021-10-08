@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function FirstScreen(props) {
-  let { data } = props;
+  let { data, questionNo, selectAns } = props;
 
   return (
     <>

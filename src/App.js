@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import FirstScreen from './FirstScreen';
 import SecondScreen from './SecondScreen';
 export default function App() {
-  const [questionNo, setQuestionNo] = useState(9);
+  const [questionNo, setQuestionNo] = useState(null);
+  const [selectAns, setSelectAns] = useState(null);
   const [stop, setStop] = useState(false);
 
   const data = [
@@ -56,7 +57,11 @@ export default function App() {
     <>
       <div className="container ">
         <div className="row ">
-          <FirstScreen data={data} />
+          <FirstScreen
+            data={data}
+            questionNo={questionNo}
+            selectAns={selectAns}
+          />
           <SecondScreen questionNo={questionNo} />
         </div>
       </div>
