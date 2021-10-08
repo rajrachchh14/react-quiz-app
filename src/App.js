@@ -8,8 +8,8 @@ export default function App() {
     <>
       <div className="container ">
         <div className="row ">
-          <FirstScreen questionNoHook={questionNo} />
-          <SecondScreen />
+          <FirstScreen />
+          <SecondScreen questionNo={questionNo} />
         </div>
       </div>
     </>

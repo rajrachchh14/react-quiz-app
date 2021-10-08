@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function SecondScreen({ questionNoHook }) {
-  console.log(questionNoHook);
+function SecondScreen(props) {
+  console.log(props.questionNo);
 
   const MoneyPeramid = [
     { id: 1, amount: 100 },
@@ -34,3 +34,4 @@ export default function SecondScreen({ questionNoHook }) {
     </>
   );
 }
+export default SecondScreen;
