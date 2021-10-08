@@ -22,7 +22,7 @@ export default function SecondScreen({ questionNoHook }) {
         <div className="fixed-right">
           {MoneyPeramid.map((item, i) => (
             <div
-              class="alert alert-light border border-primary MoneyList"
+              className="alert alert-light border border-primary MoneyList"
               style={{ padding: '14px' }}
             >
               {item.id} . ${item.amount}
